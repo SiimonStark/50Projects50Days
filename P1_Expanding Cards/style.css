@@ -13,6 +13,9 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-image: url("https://happywall-img-gallery.imgix.net/259/vit_topografisk_karta_display.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 dl {
@@ -49,6 +52,7 @@ dd {
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
+    box-shadow: slategrey 4px 5px 8px;
 }
 
 .panel section {
@@ -60,6 +64,8 @@ dd {
     margin: 0;
     opacity: 0;
     border-radius: 0px 0px 50px 50px;
+    transition: opacity 3s ease-in;
+    transition: opacity .5s ease-out;
 }
 
 .panel.active {
@@ -68,4 +74,23 @@ dd {
 
 .panel.active section {
     opacity: 1;
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+
+    dt {
+        font-size: 8vw;
+    }
+
+    dd {
+        font-size: 4.5vw;
+    }
 }
