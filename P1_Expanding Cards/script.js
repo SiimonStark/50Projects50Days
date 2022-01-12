@@ -1,8 +1,10 @@
 const panels = document.querySelectorAll('.panel');
 
 panels.forEach(p => {
-    removeActive();
-    p.classList.add('active');
+    p.addEventListener('click', () => {
+        removeActive();
+        p.classList.add('active');
+    });
 });
 
 const removeActive = () => {

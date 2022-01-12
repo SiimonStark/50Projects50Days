@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,4 +13,59 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+dl {
+    background-color: rgba(100, 100, 100, .95);
+    box-shadow: 1px 1px 10px black;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+dt {
+    font-family: Lobster, sans-serif;
+    font-size: 3vw;
+}
+
+dd {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5vw;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel section {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    opacity: 0;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active section {
+    opacity: 1;
 }
