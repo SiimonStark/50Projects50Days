@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  background-color: #fafafa;
+  background-color: #fff;
   transform-origin: top left;
   transition: transform 0.5s linear;
   width: 100vw;
@@ -22,7 +22,7 @@ body {
 }
 
 .container.show-nav {
-  transform: rotate(-10deg);
+  transform: rotate(-20deg);
 }
 
 .container.show-nav + nav li {
@@ -78,6 +78,10 @@ nav ul li + li + li {
   border-radius: 50%;
   position: relative;
   transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
 }
 
 .circle button {
