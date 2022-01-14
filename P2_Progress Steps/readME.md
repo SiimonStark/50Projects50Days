@@ -1,6 +1,6 @@
 # Progress Steps
 
-## What is Overlanding
+## Description
 In this project I practice using conditional rendering to build a pagination component.
 
 ### (Screen Capture)
