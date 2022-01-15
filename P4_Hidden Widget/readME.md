@@ -1,7 +1,7 @@
 # Hidden Search Widget
 
 ## Description
-With this project
+Quick sample of creating a search widget that hides when not needed
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget]()
+![Screenshot_Hidden Search Widget](./assets/Hidden%20Search.gif);
