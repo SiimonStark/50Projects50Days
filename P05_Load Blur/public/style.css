@@ -1,16 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: url('https://i.pinimg.com/originals/c8/2c/0e/c82c0ebacf4f1ff1c3b376ee7d2d2f39.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(70px);
+}
+
+.loading-text {
+    text-align: center;
+    color: white;
+    text-shadow: black 2px 2px 5px;
+    background: rgba(00, 00, 00, .9);
+    padding: 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.loading-text h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.loading-text h2 {
+    font-size: 150px;
     margin: 0;
 }
