@@ -15,6 +15,12 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    margin: 20px;
+    padding: 20px;
+    height: 90vh;
+}
+
 h1 {
     margin: 10px;
 }
@@ -30,12 +36,12 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-    transform: translateX(200%);
+    transform: translateX(75vw);
     transition: transform 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-    transform: translateX(-200%);
+    transform: translateX(-75vw);
 }
 
 .box.show {
