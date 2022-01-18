@@ -1,7 +1,7 @@
-# Project Name
+# Scroll Animation
 
 ## Description
-Lorem Ipsum
+Have content ease in from the side as the user scrolls down.
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#);
+![Screenshot_Hidden Search Widget](./assets/Scroll%20Effect.gif)
