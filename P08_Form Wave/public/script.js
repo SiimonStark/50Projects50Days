@@ -1,16 +1,19 @@
 const labels = document.querySelectorAll('.form-control label');
 
-let targetEvents = () => {
-  labels.forEach(label =>
-    label.addEventListener('click', () => {
-      let text = label.innerText.split(' ').join('').toLowerCase();
-      let input = document.getElementById(text);
-      input.focus();
-    })
-  );
+const targetEvents = () => {
+  labels.forEach(label => {
+    label.addEventListener('click', () => setFocus(label));
+    label.addEventListener('mouseenter', () => setFocus(label));
+  });
 }
 
-targetEvents();
+const setFocus = (label) => {
+  let text = label.innerText.split(' ').join('').toLowerCase();
+  let input = document.getElementById(text);
+  if (input.value.length <= 0) {
+    input.focus();
+  }
+}
 
 const moveTextUp = () => {
   labels.forEach(label => {
@@ -23,4 +26,5 @@ const moveTextUp = () => {
   });
 }
 
+targetEvents();
 moveTextUp();
