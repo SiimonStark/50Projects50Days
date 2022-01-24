@@ -1,7 +1,7 @@
-# Project Name
+# Sound Board
 
 ## Description
-Lorem Ipsum
+Simple free guitar sound clips added to audio fields and buttons that dynamically link
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Hidden Search Widget](./assets/clipart.png)
