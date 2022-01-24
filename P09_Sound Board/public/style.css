@@ -17,6 +17,14 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .btn {
     background-color: burlywood;
     border-radius: 5px;
@@ -35,4 +43,8 @@ body {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+img {
+    width: 300px;
 }
