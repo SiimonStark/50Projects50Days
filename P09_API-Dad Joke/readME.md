@@ -1,7 +1,7 @@
-# Project Name
+# API Card || Dad Jokes
 
 ## Description
-Lorem Ipsum
+Simple auth free api fetch. Handles errors and displays result.
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Hidden Search Widget](./assets/09_screencap.gif)
