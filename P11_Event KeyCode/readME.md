@@ -1,7 +1,7 @@
-# Project Name
+# Event KeyCode
 
 ## Description
-Lorem Ipsum
+Simple component that displays which key and it's associated codes
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Hidden Search Widget](./assets/p11_screeenCap.gif)
