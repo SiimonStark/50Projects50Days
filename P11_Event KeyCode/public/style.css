@@ -31,12 +31,24 @@ body {
     position: relative;
 }
 
-.key .small {
+.key small {
     position: absolute;
-    top: -24px;
+    top: -38px;
     left: 0;
     text-align: center;
     width: 100%;
     color: #555;
     font-size: 14px;
+    height: 20px;
+    margin-top: auto;
+    cursor: default;
+}
+
+.key small em {
+    opacity: 0;
+    transition: .8s ease;
+}
+
+.key small em:hover {
+    opacity: 1;
 }
