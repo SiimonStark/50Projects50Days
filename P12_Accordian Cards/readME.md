@@ -1,7 +1,7 @@
-# Project Name
+# Accordian Cards
 
 ## Description
-Lorem Ipsum
+Quick project that uses CSS and a little bit of JS to create collapsing cards.
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Accordian Cards](./assets/p12_screencap.gif)
