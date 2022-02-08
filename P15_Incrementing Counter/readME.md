@@ -3,7 +3,7 @@
 ## Description
 Sample of a ticker that increments from 0 -> actual. 
 
-*Press any button to active*
+*Press any key or click to activate*
 <br>
 <br>
 ### (Screen Capture)

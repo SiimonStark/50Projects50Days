@@ -1,6 +1,6 @@
 const counters = document.querySelectorAll('.counter');
 
-window.addEventListener('keydown', (e) => {
+const initCounter = () => {
     counters.forEach(counter => {
         counter.innerText = '0';
 
@@ -17,4 +17,8 @@ window.addEventListener('keydown', (e) => {
 
         updateCounter();
     });
-});
+};
+
+window.addEventListener('keydown', initCounter);
+
+window.addEventListener('click', initCounter);
