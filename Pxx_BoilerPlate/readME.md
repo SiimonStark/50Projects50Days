@@ -2,6 +2,8 @@
 
 ## Description
 Lorem Ipsum
+<br>
+<br>
 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Project Name](#)
