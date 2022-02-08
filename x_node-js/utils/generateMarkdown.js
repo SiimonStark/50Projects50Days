@@ -2,11 +2,9 @@
 function generateMarkdown(data) {
   const buildLink = (data) => {
     let listItems = data.map((title, i) => {
-      return (
-        `[${title}](https://github.com/SiimonStark/50Projects50Days/tree/main/${title}) <br>`
-      );
+      return `[${title}](https://github.com/SiimonStark/50Projects50Days/tree/main/${title})`;
     });
-
+    listItems = listItems.join(`<br>`).split(',');
     console.log({ listItems });
     return listItems;
   };
@@ -21,11 +19,15 @@ In this repo we practice and focus on small aspects of design and interaction.Th
 This list contains quick links to each project within the folder tree of this project.
 Each project has it's own brief ReadME + screencapture:
 
+<hr>
+
 ${buildLink(data)}
+
+<hr>
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at siimonstark @gmail.com.You can find more of my work at[SiimonStark](https://github.com/siimonstark/).
+If you have any questions about the repo, open an issue or contact me directly at siimonstark@gmail.com.You can find more of my work at [SiimonStark](https://github.com/siimonstark/).
 
 `
 }

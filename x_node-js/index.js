@@ -10,7 +10,9 @@ function writeToFile(fileName, data) {
 
 // Function to initialize app
 function init() {
+    // Grab all folders names that meet criteria and format
     let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
+    foundFiles = foundFiles.map(file => file.replaceAll(' ', '_'));
     console.log({ foundFiles });
     writeToFile('README.md', generateMarkdown(foundFiles));
 };
