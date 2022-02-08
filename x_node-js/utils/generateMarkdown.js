@@ -1,8 +1,8 @@
 // Create a function to generate markdown for README
 function generateMarkdown(data) {
   const buildLink = (data) => {
-    let listItems = data.map((title, i) => {
-      return `[${title}](https://github.com/SiimonStark/50Projects50Days/tree/main/${title})`;
+    let listItems = data.map((file, i) => {
+      return `[${file.title}](https://github.com/SiimonStark/50Projects50Days/tree/main/${file.link})`;
     });
     listItems = listItems.join(`<br>`).split(',');
     console.log({ listItems });

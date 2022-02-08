@@ -1,3 +1,4 @@
+const exp = require('constants');
 const fs = require('fs');
 const path = require('path');
 // const inquirer = require('inquirer');
@@ -12,7 +13,11 @@ function writeToFile(fileName, data) {
 function init() {
     // Grab all folders names that meet criteria and format
     let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
-    foundFiles = foundFiles.map(file => file.replaceAll(' ', '_'));
+    foundFiles = foundFiles.map(file => {
+        let expandedItem = { title: file, link: '' };
+        expandedItem.link = file.replaceAll(' ', '%20');
+        return expandedItem;
+    });
     console.log({ foundFiles });
     writeToFile('README.md', generateMarkdown(foundFiles));
 };
