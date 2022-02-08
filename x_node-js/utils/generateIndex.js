@@ -2,7 +2,7 @@
 function generateIndex(data) {
     const buildLink = (data) => {
         let listItems = data.map(file => {
-            return `<div><a href="./${file.path}/public/">${file.title}</a></div>`;
+            return `<div><a href="./${file.title}/public/">${file.title}</a></div>`;
         });
         listItems = listItems.join(``).split(',');
         console.log({ listItems });
@@ -27,7 +27,7 @@ function generateIndex(data) {
             <hr />
         </div>
         <div class="container">
-            ${buildLink}
+            ${buildLink(data)}
         </div>
         
     </body>
