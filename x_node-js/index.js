@@ -10,7 +10,7 @@ function writeToFile(fileName, data) {
 
 // Function to initialize app
 function init() {
-    let foundFiles = fs.readdirSync('../').filter(file => file[0] === 'P');
+    let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
     console.log({ foundFiles });
     writeToFile('README.md', generateMarkdown(foundFiles));
 };
