@@ -1,7 +1,8 @@
-# Project Name
+# Increment Counter
 
 ## Description
-Lorem Ipsum
-
+Sample of a ticker that increments from 0 -> actual. 
 ### (Screen Capture)
-![Screenshot_Hidden Search Widget](#)
+![Screenshot_Increment Counter](./assets/p15_screencap.gif)
+
+<small>*(Dummy data provided)*</small>
