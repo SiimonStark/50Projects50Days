@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
 
 :root {
   --pallet-1: #08cbdd;
@@ -11,6 +13,10 @@
 body {
   background-color: var(--pallet-1);
   color: var(--pallet-5);
+}
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .container {
@@ -33,7 +39,7 @@ body {
   box-shadow: 1px 1px 7px var(--pallet-5);
 }
 
-div:hover {
+.container div:hover {
   background-color: var(--pallet-2);
   cursor: pointer;
   transform: scale(.98);
@@ -46,9 +52,4 @@ div a {
   height: 100%;
   width: 100%;
   padding-top: 25px;
-  filter: opacity(.9);
 }
-
-/* div a:visited {
-  color: var(--pallet-2);
-} */
