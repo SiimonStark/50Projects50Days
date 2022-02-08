@@ -12,6 +12,8 @@ function generateMarkdown(data) {
   return `
 # 50 Projects Challenge
 
+### Live @ [Github Pages](https://siimonstark.github.io/50Projects50Days/)
+
 ## Description
 In this repo we practice and focus on small aspects of design and interaction.These small mini projects serve as a reference and or inspiration that can be implemented into other projects down the road.
 
