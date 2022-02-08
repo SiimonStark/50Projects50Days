@@ -1,0 +1,35 @@
+// Create a function to generate markdown for README
+function generateMarkdown(data) {
+  const buildLink = (data) => {
+    let listItems = data.map((title, i) => {
+      return (
+        `[${title}](https://github.com/SiimonStark/50Projects50Days/tree/main/${title}) <br>`
+      );
+    });
+
+    console.log({ listItems });
+    return listItems;
+  };
+
+  return (
+    `# 50 Projects Challenge
+
+    ## Description
+    In this repo we practice and focus on small aspects of design and interaction. These small mini projects serve as a reference and or inspiration that can be implemented into other projects down the road.
+    
+    <hr>
+    
+    ## List
+    This list contains quick links to each project within the folder tree of this project.
+    Each project has it's own brief ReadME + screencapture:
+
+    ${buildLink(data)}
+
+    ## Questions
+
+    If you have any questions about the repo, open an issue or contact me directly at siimonstark@gmail.com . You can find more of my work at [SiimonStark](https://github.com/siimonstark/).
+    `
+  );
+}
+
+module.exports = generateMarkdown;
