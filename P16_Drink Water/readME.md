@@ -1,9 +1,9 @@
-# Project Name
+# Drink Water
 
 ## Description
-Lorem Ipsum
+When user clicks a cup to "drink" the large meter updates. Of the projects so far, this one is a bit more JS intensive.
 <br>
 <br>
 
 ### (Screen Capture)
-![Screenshot_Project Name](#)
+![Screenshot_Drink Water](./assets/p16_screencap.gif)
