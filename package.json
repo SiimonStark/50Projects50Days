@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "genDoc": "node ./x_node-js/index.js"
   }
 }
