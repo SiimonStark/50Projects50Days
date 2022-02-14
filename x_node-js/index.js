@@ -14,6 +14,7 @@ function init() {
     // Grab all folders names that meet criteria and format
     let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
     foundFiles = foundFiles.map(file => {
+        console.log({ file });
         let expandedItem = { title: file, link: '', path: '' };
         expandedItem.link = file.replaceAll(' ', '%20');
         expandedItem.path = file.replaceAll(' ', '_');
