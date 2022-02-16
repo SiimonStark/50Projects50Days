@@ -1,9 +1,9 @@
-# Project Name
+# Movie App
 
 ## Description
-Lorem Ipsum
+This app access TMDB api to retrieve movie data based on popular(default) or by query
 <br>
 <br>
 
 ### (Screen Capture)
-![Screenshot_Project Name](#)
+![Screenshot_Movie App](./assets/p17_screencap.gif)
