@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Boiler Plate || 50 Projects in 50 Days</title>
+    <title>Image Slider || 50 Projects in 50 Days</title>
 </head>
+
 <body>
-    <h1>Project Starter</h1>
+    <div class="slider-container">
+        <div class="slide active"
+            style="background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/001/345/250/f36.gif');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://64.media.tumblr.com/6a3cb4e197fb24a3b866c3727dacdbc7/f96f8b1c24f91f10-22/s500x750/a0f2f673b4345db47ad69f7977ebea67e00f99c0.gifv');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://i.pinimg.com/originals/c7/fd/65/c7fd65f77ab3652c858d0305f354ad88.gif');">
+        </div>
+        <div class="slide"
+            style="background-image: url('https://64.media.tumblr.com/2bc084c044357fe1e782dd67441c9d4b/6d52c0b9418c967f-ba/s540x810/45dad2e09d6092b4f8a2e43953342a5feb08b581.gifv');">
+        </div>
+
+        <button class="arrow left-arrow" id="left">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="arrow right-arrow" id="right">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
