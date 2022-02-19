@@ -17,6 +17,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     background-color: purple;
     color: white;
     border: 1px purple solid;
@@ -27,7 +28,6 @@ button {
     overflow: hidden;
     margin: 10px 0;
     position: relative;
-    /* overflow: hidden; */
 }
 
 button:focus {
