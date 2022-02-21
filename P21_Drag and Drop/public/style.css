@@ -29,6 +29,16 @@ body {
     cursor: pointer;
 }
 
+.hold {
+    border: #ccc solid 5px;
+}
+
+.hovered {
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
 @media(max-width: 800px) {
     body {
         flex-direction: column;
