@@ -5,10 +5,10 @@ fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
 
 for (const empty of empties) {
-  fill.addEventListener('dragover', dragOver);
-  fill.addEventListener('dragenter', dragEnter);
-  fill.addEventListener('dragleave', dragLeave);
-  fill.addEventListener('drop', dragDrop);
+  empty.addEventListener('dragover', dragOver)
+  empty.addEventListener('dragenter', dragEnter)
+  empty.addEventListener('dragleave', dragLeave)
+  empty.addEventListener('drop', dragDrop)
 }
 
 function dragStart() {
