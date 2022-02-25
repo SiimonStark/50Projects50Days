@@ -10,6 +10,7 @@ const ctx = canvas.getContext('2d');
 let size = 20;
 let isPressed = false;
 let color = 'black';
+let points = [];
 let x;
 let y;
 
@@ -34,10 +35,19 @@ canvas.addEventListener('mousemove', (e) => {
 
         drawCircle(x2, y2);
         drawLine(x, y, x2, y2);
-        // drawCircle(x2, y2);
 
         x = x2;
         y = y2;
+
+        // Command pattern stuff: Save the mouse position and 
+        // the size/color of the brush to the "undo" array
+        points.push({
+            x: mouseX,
+            y: mouseY,
+            size: brushSize,
+            color: brushColor,
+            mode: "draw"
+        });
     }
 });
 
