@@ -6,4 +6,4 @@ Example of a side-by-side text and image box that flicks to the next slide in op
 <br>
 
 ### (Screen Capture)
-![Screenshot_Double Vertical Slider](#)
+![Screenshot_Double Vertical Slider](./assets/p26_screencap.gif)
