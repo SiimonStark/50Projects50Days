@@ -22,13 +22,24 @@ function generateIndex(data) {
     </head>
 
     <body>
-        <div>
+        <header>
             <h1>Hello World 🤖🌎</h1>
             <hr />
-        </div>
+        </header>
         <div class="container">
             ${buildLink(data)}
         </div>
+        <footer>
+            <div class="links">
+                <a href="https://github.com/SiimonStark/50Projects50Days">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png" alt="Github icon for repo"/>
+                </a>
+            </div>
+            <div class="course">
+                This project is a deviation from the course originally by Brad Traversy on 
+                <a href="https://www.udemy.com/course/50-projects-50-days/learn/lecture/23594652#content"> Udemy</a>
+            </div>
+        </footer>
         
     </body>
     </html>

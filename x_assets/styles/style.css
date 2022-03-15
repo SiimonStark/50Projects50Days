@@ -10,6 +10,10 @@
   --pallet-5: hsla(0, 0%, 3%, 0.7);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--pallet-1);
   color: var(--pallet-5);
@@ -37,6 +41,7 @@ h1 {
   justify-content: center;
   border-radius: 5px;
   box-shadow: 1px 1px 7px var(--pallet-5);
+  transition: all .2s linear;
 }
 
 .container div:hover {
@@ -46,10 +51,41 @@ h1 {
   box-shadow: 1px 1px 2px var(--pallet-5);
 }
 
-div a {
+.container div a {
   text-decoration: none;
   color: var(--pallet-3);
-  height: 100%;
   width: 100%;
-  padding-top: 25px;
+}
+
+footer {
+  font-family: 'Roboto';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  height: 40px;
+  width: 100vw;
+  border-top: 1px white inset;
+  padding: 0 3rem;
+}
+
+.links img {
+  width: 70px;
+  opacity: 70%;
+  transition: opacity ease-in .2s;
+}
+
+.course a {
+  color: white;
+  opacity: 70%;
+  transition: opacity ease-in .2s;
+}
+
+.links img:hover,
+.course a:hover {
+  opacity: 100%;
 }
