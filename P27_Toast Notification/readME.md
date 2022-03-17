@@ -1,9 +1,9 @@
-# Project Name
+# Toast Notification
 
 ## Description
-Lorem Ipsum
+Example that takes a message & type and displays a styled toast notification.
 <br>
 <br>
 
 ### (Screen Capture)
-![Screenshot_Project Name](#)
+![Screenshot_Toast Notification](./assets/p27_screencap.gif)
