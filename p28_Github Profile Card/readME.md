@@ -1,9 +1,9 @@
-# Project Name
+# Github Profile Card
 
 ## Description
-Lorem Ipsum
+Implement Axios to pull Github data into a stylish card.
 <br>
 <br>
 
 ### (Screen Capture)
-![Screenshot_Project Name](#)
+![Screenshot_Github Profile Card](./assets/p28_screencap.gif)
