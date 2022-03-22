@@ -29,7 +29,7 @@ small {
 .post {
     height: 440px;
     width: 300px;
-    background: url() no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1546998557-f4da4a981c78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
     margin: auto;
     cursor: pointer;
     max-width: 100%;
