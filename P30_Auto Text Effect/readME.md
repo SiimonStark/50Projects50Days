@@ -1,9 +1,9 @@
-# Project Name
+# Auto Text Effect
 
 ## Description
-Lorem Ipsum
+Short little sample of a text animation based on user speed input.
 <br>
 <br>
 
 ### (Screen Capture)
-![Screenshot_Project Name](#)
+![Screenshot_Auto Text Effect](./assets/p30_screencap.gif)
