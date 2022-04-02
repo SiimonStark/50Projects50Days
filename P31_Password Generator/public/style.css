@@ -46,7 +46,7 @@ h2 {
 
 .result-container #result {
     word-wrap: break-word;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 40px); /* This accounts for clipboard icon */
 }
 
 .result-container .btn {
