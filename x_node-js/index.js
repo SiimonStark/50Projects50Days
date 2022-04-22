@@ -15,9 +15,14 @@ function init() {
     let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
     foundFiles = foundFiles.map(file => {
         console.log({ file });
-        let expandedItem = { title: file, link: '', path: '' };
+        let expandedItem = { title: file, link: '', path: '', screencap: '' };
         expandedItem.link = file.replaceAll(' ', '%20');
         expandedItem.path = file.replaceAll(' ', '_');
+        if (expandedItem.path.length) {
+            let assetFile = fs.readdirSync(`./${file}/assets/`)
+            expandedItem.screencap = `./${expandedItem.path}/assets/${assetFile}`;
+            console.log('ASSET PATH => ', expandedItem.screencap);
+        }
         return expandedItem;
     });
     console.log({ foundFiles });

@@ -2,7 +2,8 @@
 function generateIndex(data) {
     const buildLink = (data) => {
         let listItems = data.map(file => {
-            return `<div><a href="./${file.title}/public/">${file.title}</a></div>`;
+            let screenShot = '';
+            return `<div><img src="${file.screencap}" /><a href="./${file.title}/public/">${file.title}</a></div>`;
         });
         listItems = listItems.join(``).split(',');
         console.log({ listItems });
