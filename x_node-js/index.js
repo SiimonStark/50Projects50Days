@@ -14,18 +14,15 @@ function init() {
     // Grab all folders names that meet criteria and format
     let foundFiles = fs.readdirSync('./').filter(file => file[0] === 'P');
     foundFiles = foundFiles.map(file => {
-        console.log({ file });
         let expandedItem = { title: file, link: '', path: '', screencap: '' };
+        let assetFile = fs.readdirSync(`./${file}/assets/`);
+
         expandedItem.link = file.replaceAll(' ', '%20');
         expandedItem.path = file.replaceAll(' ', '_');
-        let assetFile = fs.readdirSync(`./${file}/assets/`)
-        if (assetFile) {
-            expandedItem.screencap = `./${file}/assets/${assetFile}`;
-            console.log('ASSET PATH => ', expandedItem.screencap);
-        }
+        expandedItem.screencap = `./${file}/assets/${assetFile[0]}`;
+
         return expandedItem;
     });
-    console.log({ foundFiles });
     writeToFile('README.md', generateMarkdown(foundFiles));
     writeToFile('index.html', generateIndex(foundFiles));
 };

@@ -31,9 +31,9 @@ h1 {
 .container div {
   background-color: var(--pallet-4);
   margin: 20px auto;
-  width: fit-content;
+  width: min-content;
   height: fit-content;
-  font-size: 22px;
+  font-size: 100%;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   display: flex;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
     box-sizing: border-box;
@@ -23,55 +23,35 @@ small {
 }
 
 .fa-heart {
-    text-shadow: 1px 1px black;
-    color: gray;
-}
-
-.fa-heart.active {
     color: red;
 }
 
-.card .fa-heart {
-    position: absolute;
-    animation: grow 0.6s linear;
-    transform: translate(-50%, -50%) scale(0);
-}
-
-.content {
+.cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 30px;
-    height: 90vh;
-    width: 100vw;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10%;
 }
 
 .card {
     height: 440px;
     width: 300px;
+    background: url('https://images.unsplash.com/photo-1546998557-f4da4a981c78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
     max-width: 100%;
     position: relative;
-    overflow: hidden;
-    margin: 20px auto;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
 }
 
-.details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.post {
+.card .fa-heart {
+    position: absolute;
     z-index: 99;
-    height: 90%;
-    width: 100%;
-    cursor: pointer;
-    background: url('https://images.unsplash.com/photo-1546998557-f4da4a981c78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+    animation: grow 0.6s linear;
+    transform: translate(-50%, -50%) scale(0);
 }
 
 @keyframes grow {

@@ -2,33 +2,45 @@ const cards = document.querySelectorAll('.card');
 const times = document.getElementById('times');
 
 let clickTime = 0;
-let heartStyle = '';
+let timesClicked = 0;
 
-cards.forEach(post => post.addEventListener('dblclick', (e) => createHeart(e, post)));
+cards.forEach(card => card.addEventListener('click', (e) => handleClick(e)));
+
+const handleClick = (e) => {
+    if (clickTime === 0) {
+        clickTime = new Date().getTime()
+    } else {
+        if ((new Date().getTime() - clickTime) < 800) {
+            createHeart(e)
+            clickTime = 0
+        } else {
+            clickTime = new Date().getTime()
+        }
+    }
+}
 
 const createHeart = (e, post) => {
     const heart = document.createElement('i');
     heart.classList.add('fas');
     heart.classList.add('fa-heart');
-    heart.classList.add('active');
 
     const x = e.clientX;
     const y = e.clientY;
 
-    console.log(e);
-    const offsetLeft = e.offsetX;
-    const offsetTop = e.offsetY;
-    console.log(x, y);
-    console.log(offsetLeft, offsetTop);
+    const leftOffset = e.target.offsetLeft;
+    const topOffset = e.target.offsetTop;
 
-    const xInside = x - offsetLeft;
-    const yInside = y - offsetTop;
-    console.log('Click => ', xInside, yInside);
+    const xInside = x - leftOffset;
+    const yInside = y - topOffset;
 
     heart.style.top = `${yInside}px`;
     heart.style.left = `${xInside}px`;
 
-    post.appendChild(heart);
+    e.target.appendChild(heart);
+
+    times.innerHTML = ++timesClicked;
+
+    setTimeout(() => heart.remove(), 1000);
 };
 
 // Broken heart fontawesome
