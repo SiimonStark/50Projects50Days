@@ -4,5 +4,9 @@
   },
   "scripts": {
     "genDoc": "node ./x_node-js/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-react": "^7.29.4"
   }
 }
