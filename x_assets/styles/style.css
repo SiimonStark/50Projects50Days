@@ -17,6 +17,7 @@
 body {
   background-color: var(--pallet-1);
   color: var(--pallet-5);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -26,11 +27,12 @@ h1 {
 .container {
   flex-wrap: wrap;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .container div {
   background-color: var(--pallet-4);
-  margin: 20px auto;
+  margin: 20px 20px;
   width: min-content;
   height: fit-content;
   font-size: 100%;
